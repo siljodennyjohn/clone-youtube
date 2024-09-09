@@ -1,0 +1,216 @@
+.header{
+    height: 60px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    
+    background-color: rgb(255, 255, 255);
+    border-bottom-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(229, 220, 220);
+    z-index: 1;
+}
+.left-section{
+    
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.hamburger-menu{
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: height 0.2s;
+}
+.hamburger-menu:hover{
+    height: 37px;
+}
+.yt-logo{
+    height: 25px;
+}
+
+.middle-section{
+    
+    flex:1;
+    margin-left: 80px;
+    margin-right: 40px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    flex: 1;
+    height: 30px;
+    width: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  rgb(228, 225, 225);
+    border-radius:20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 20px;
+    box-shadow:inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    vertical-align: center;
+    
+}
+.search-button{
+    height:34px;
+    width: 50px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(242, 242, 242, 0.985);
+    border-color:  rgb(228, 225, 225);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left:-1px;
+    margin-top: 1px;
+    vertical-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    
+}
+
+.search-lens{
+    margin: 2px;
+    width: 25px; 
+   
+}
+.search-button:hover{
+    background-color: rgb(218, 224, 224);
+    
+}
+.search-button:active{
+    box-shadow: inset 1px 2px 2px rgba(184, 182, 182, 0.985);
+}
+.search-button .tooltip{
+    background-color: lightgray;
+    font-size: 12px;
+    width: 50px;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.8s;
+    pointer-events: none;
+    display: relative;
+}
+.search-button:hover .tooltip, .voice-button:hover .tooltip{
+    position: absolute;
+    bottom: -20px;
+    opacity: 1;
+}
+.voice-button{
+    height:40px;
+    width: 40px;
+    margin-left: 8px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(242, 242, 242, 0.985);
+    transition: background-color 0.3s;
+}
+.voice-icon{
+    height:25px ;
+    margin-top: 2px;
+}
+.voice-button:hover{
+    background-color: rgb(218, 224, 224);
+    cursor: pointer;
+}
+.voice-button:active{
+    height:38px;
+    width:38px;
+}
+
+.right-section{
+    
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.upload-button{
+    height:40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    transition: background-color 0.2s;
+    
+}
+.upload-button:hover{
+    background-color: rgb(218, 224, 224);
+    cursor: pointer;
+    
+
+
+}
+.upload-icon{
+    padding-top: 4px;
+    height: 25px;
+    cursor: pointer;
+    margin: 3px;
+    transition: height 0.1s;
+}
+
+
+.bell-button{
+    height:40px;
+    width: 40px;
+    
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+.bell-button:hover{
+    background-color: rgb(218, 224, 224);
+    cursor: pointer;
+}
+.bell-icon{
+    padding-top: 4px;
+    height: 25px;
+    cursor: pointer;
+    transition: height 0.1s;
+}
+.notification-container{
+    display: flex;
+    position: relative;
+}
+.notification-count{
+    background-color: rgb(207, 13, 13);
+    color: #fcf9f9;
+    
+    height: 15px;
+    border-radius:15px;
+    border-style: solid;
+    border-width: 2px;
+    
+    font-size: smaller;
+    font-family:Arial;
+    font-weight: 300;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+.profile{
+    width: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition:width 0.1s;
+}
+.profile:hover{
+    width:45px
+    
+}
